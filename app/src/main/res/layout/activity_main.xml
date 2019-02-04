@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:background="@drawable/night"
+android:layout_width="match_parent"
+    android:orientation="vertical"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="15dp"
+android:id="@+id/txtDegreeNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="18°"
+        android:textColor="@color/colorNumbers"
+        android:textSize="90sp"
+        android:shadowColor="@color/colorShadow"
+        android:shadowDx="5"
+        android:shadowDy="5"/>
+
+    <ImageView
+        android:id="@+id/txtStateIcon"
+        android:layout_below="@+id/txtDegreeNumber"
+        android:src="@drawable/rain"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        />
+
+    <TextView
+        android:id="@+id/txtState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtStateIcon"
+        android:gravity="center"
+        android:text="Rainy"
+        android:textColor="@color/colorNumbers"
+        android:textSize="35sp" />
+    <TextView
+        android:id="@+id/txtCityName"
+        android:layout_below="@id/txtState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shanghai"
+        android:textColor="@color/colorNumbers"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+
+    <RelativeLayout
+        android:padding="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_below="@id/txtCityName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rltFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <TextView
+              android:id="@+id/txtDay1"
+              android:text="Today"
+              android:textColor="@color/colorNumbers"
+              android:textSize="20sp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+          </TextView>
+            <ImageView
+                android:id="@+id/imgState1"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/sun"
+                android:layout_marginLeft="8dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10-18°"
+                android:textSize="20sp"
+                android:textColor="@color/colorNumbers"
+                android:layout_toLeftOf="@id/imgState1"/>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rltSecond"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/rltFirst"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtDay2"
+                android:text="tue"
+                android:textColor="@color/colorNumbers"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <ImageView
+                android:id="@+id/imgState2"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/sun"
+                android:layout_marginLeft="8dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10-18°"
+                android:textSize="20sp"
+                android:textColor="@color/colorNumbers"
+                android:layout_toLeftOf="@id/imgState2"/>
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/rltThird"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/rltSecond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtDay3"
+                android:text="wed"
+                android:textColor="@color/colorNumbers"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <ImageView
+                android:id="@+id/imgState3"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/sun"
+                android:layout_marginLeft="8dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10-18°"
+                android:textSize="20sp"
+                android:textColor="@color/colorNumbers"
+                android:layout_toLeftOf="@id/imgState3"/>
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/rltForth"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/rltThird"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtDay4"
+                android:text="thu"
+                android:textColor="@color/colorNumbers"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <ImageView
+                android:id="@+id/imgState4"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/sun"
+                android:layout_marginLeft="8dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10-18°"
+                android:textSize="20sp"
+                android:textColor="@color/colorNumbers"
+                android:layout_toLeftOf="@id/imgState4"/>
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/rltFifth"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/rltForth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtDay5"
+                android:text="fri"
+                android:textColor="@color/colorNumbers"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <ImageView
+                android:id="@+id/imgState5"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/sun"
+                android:layout_marginLeft="8dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10-18°"
+                android:textSize="20sp"
+                android:textColor="@color/colorNumbers"
+                android:layout_toLeftOf="@id/imgState5"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rltSixth"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/rltFifth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtDay6"
+                android:text="sat"
+                android:textColor="@color/colorNumbers"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+            <ImageView
+                android:id="@+id/imgState6"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/sun"
+                android:layout_marginLeft="8dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10-18°"
+                android:textSize="20sp"
+                android:textColor="@color/colorNumbers"
+                android:layout_toLeftOf="@id/imgState6"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
